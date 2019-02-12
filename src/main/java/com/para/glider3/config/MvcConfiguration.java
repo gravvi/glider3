@@ -33,16 +33,30 @@ public class MvcConfiguration extends WebMvcConfigurerAdapter{
 
 	@Bean
 	public DataSource getDataSource() {
+		String host = "service_vm_ip";  
+		String username = "username";  
+		String password = "password";  
+		String dbName = "database_name";  
+		int port = 5432;
 		DriverManagerDataSource dataSource = new DriverManagerDataSource();
-		dataSource.setDriverClassName("com.mysql.jdbc.Driver");
+		/*dataSource.setDriverClassName("org.postgresql.Driver");
+		dataSource.setUrl("jdbc:postgresql://localhost:5432/paragliders" + "?autoReconnect=true");
+		dataSource.setUsername("postgres");
+		dataSource.setPassword("15001900");*/
+		
+		/*dataSource.setDriverClassName("com.mysql.jdbc.Driver");
 		dataSource.setUrl("jdbc:mysql://localhost:3306/paragliders");
 		dataSource.setUsername("root");
-		dataSource.setPassword("15001900mcCM");
+		dataSource.setPassword("15001900mcCM");*/
 
 		/*dataSource.setUrl("jdbc:mysql://172.30.98.145:3306/paragliders");
 		dataSource.setUsername("admin");
 		dataSource.setPassword("admin");
 		 */
+		dataSource.setUrl("jdbc:postgresql://ec2-54-247-118-238.eu-west-1.compute.amazonaws.com:5432/ddk2p7tvqvijkj");
+		dataSource.setUsername("vghgyuzxgkrmqy");
+		dataSource.setPassword("354b7018aedab29f0ec57edda82c22a3649ff25d0c4eec4fcbcfc139448bbdde");
+		 
 		return dataSource;
 	}
 
