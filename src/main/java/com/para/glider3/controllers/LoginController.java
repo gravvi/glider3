@@ -53,7 +53,7 @@ public class LoginController {
 	
 	@RequestMapping(value = { "/welcome2" }, method = RequestMethod.GET)
 	public String home(ModelMap model) {
-		model.addAttribute("log", "Zaloguj siê jako: ");
+		model.addAttribute("log", "Zaloguj sie jako: ");
 		return "Security/Login";
 	}
 	
