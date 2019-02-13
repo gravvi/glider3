@@ -33,10 +33,10 @@ public class MvcConfiguration extends WebMvcConfigurerAdapter{
 
 	@Bean
 	public DataSource getDataSource() {
-		String host = "service_vm_ip";  
-		String username = "username";  
-		String password = "password";  
-		String dbName = "database_name";  
+		String host = "ec2-54-75-230-41.eu-west-1.compute.amazonaws.com";  
+		String username = "bsrxdkddxjsvpr";  
+		String password = "05ba890afafb66d0969618049380b96fda300582f858f4cb0f1fb84a9bfba7b2";  
+		String dbName = "devcrpog06nafj";  
 		int port = 5432;
 		DriverManagerDataSource dataSource = new DriverManagerDataSource();
 		/*dataSource.setDriverClassName("org.postgresql.Driver");
@@ -53,9 +53,9 @@ public class MvcConfiguration extends WebMvcConfigurerAdapter{
 		dataSource.setUsername("admin");
 		dataSource.setPassword("admin");
 		 */
-		dataSource.setUrl("jdbc:postgresql://ec2-54-247-118-238.eu-west-1.compute.amazonaws.com:5432/ddk2p7tvqvijkj");
-		dataSource.setUsername("vghgyuzxgkrmqy");
-		dataSource.setPassword("354b7018aedab29f0ec57edda82c22a3649ff25d0c4eec4fcbcfc139448bbdde");
+		dataSource.setUrl("jdbc:postgresql://ec2-54-75-230-41.eu-west-1.compute.amazonaws.com:5432/devcrpog06nafj");
+		dataSource.setUsername("bsrxdkddxjsvpr");
+		dataSource.setPassword("05ba890afafb66d0969618049380b96fda300582f858f4cb0f1fb84a9bfba7b2");
 		 
 		return dataSource;
 	}
