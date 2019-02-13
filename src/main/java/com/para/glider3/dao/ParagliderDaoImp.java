@@ -23,13 +23,13 @@ public class ParagliderDaoImp implements ParagliderDao {
 	}
 	
 	public void delete(int paragliderId) {
-		String sql = "DELETE FROM paraglider WHERE id=?";
+		String sql = "DELETE FROM paraglider.paraglider WHERE id=?";
 		jdbcTemplate.update(sql, paragliderId);
 		
 	}
 	
 	public Paraglider get(int paragliderId) {
-		String sql = "SELECT * FROM  paraglider WHERE id=" + paragliderId;
+		String sql = "SELECT * FROM  paraglider.paraglider WHERE id=" + paragliderId;
 		
 		return jdbcTemplate.query(sql, new ResultSetExtractor<Paraglider>() {
 			
@@ -54,7 +54,7 @@ public class ParagliderDaoImp implements ParagliderDao {
 	}
 	
 	public List<Paraglider> list() {
-		String sql = "SELECT * FROM paraglider";
+		String sql = "SELECT * FROM paraglider.paraglider";
 		List<Paraglider> listParaglider = jdbcTemplate.query(sql, new RowMapper<Paraglider>() {
 			
 			public Paraglider mapRow(ResultSet rs, int rowNum) throws SQLException {
@@ -75,11 +75,11 @@ public class ParagliderDaoImp implements ParagliderDao {
 	
 	public void saveOrUpdate(Paraglider paraglider) {
 		if (paraglider.getId() > 0) {
-			String sql = "UPDATE paraglider SET name=?, kolor=?, date=?, manufacturer=?, price=? WHERE id=?";
+			String sql = "UPDATE paraglider.paraglider SET name=?, kolor=?, date=?, manufacturer=?, price=? WHERE id=?";
 			jdbcTemplate.update(sql, paraglider.getName(), paraglider.getKolor(), paraglider.getDate(),
 					paraglider.getManufacturer(), paraglider.getPrice(), paraglider.getId());
 		} else {
-			String sql = "INSERT INTO paraglider (name, kolor, date, manufacturer, price)" + " VALUES (?, ?, ?, ?, ?)";
+			String sql = "INSERT INTO paraglider.paraglider (name, kolor, date, manufacturer, price)" + " VALUES (?, ?, ?, ?, ?)";
 			jdbcTemplate.update(sql, paraglider.getName(), paraglider.getKolor(), paraglider.getDate(),
 					paraglider.getManufacturer(), paraglider.getPrice());
 		}
