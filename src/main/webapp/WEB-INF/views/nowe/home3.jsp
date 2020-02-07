@@ -35,7 +35,7 @@
 		
 			<li class="nav-item "><a class="nav-link" href="/glider3/LP">paralotnie</a>
 			</li>
-			<li class="nav-item"><a class="nav-link" href="#">uprzęże</a></li>
+			<li class="nav-item"><a class="nav-link" href="/glider3/LP">uprzęże</a></li>
 			<li class="nav-item"><a class="nav-link" href="#">elektronika</a>
 			</li>
 			<li class="nav-item"><a class="nav-link" href="/glider3/wykres">wykresy</a>
