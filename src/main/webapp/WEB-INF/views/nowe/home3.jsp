@@ -33,15 +33,15 @@
 		<!-- Links -->
 		<ul class="navbar-nav ">
 		
-			<li class="nav-item "><a class="nav-link" href="/LP">paralotnie</a>
+			<li class="nav-item "><a class="nav-link" href="/glider3/LP">paralotnie</a>
 			</li>
-			<li class="nav-item"><a class="nav-link" href="/LP">uprzęże</a></li>
+			<li class="nav-item"><a class="nav-link" href="/glider3/LP">uprzęże</a></li>
 			<li class="nav-item"><a class="nav-link" href="#">elektronika</a>
 			</li>
 			<li class="nav-item"><a class="nav-link" href="/glider3/wykres">wykresy</a>
 			</li>
 			<li class="nav-item"><a class="nav-link"
-				href="/pictures">zdjęcia</a></li>
+				href="/glider3/pictures">zdjęcia</a></li>
 
 			<!-- Dropdown meteo -->
 			<li class="nav-item dropdown"><a
