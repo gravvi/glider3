@@ -33,15 +33,15 @@
 		<!-- Links -->
 		<ul class="navbar-nav ">
 		
-			<li class="nav-item "><a class="nav-link" href="/glider3/LP">paralotnie</a>
+			<li class="nav-item "><a class="nav-link" href="LP">paralotnie</a>
 			</li>
-			<li class="nav-item"><a class="nav-link" href="/glider3/LP">uprzęże</a></li>
+			<li class="nav-item"><a class="nav-link" href="#">uprzęże</a></li>
 			<li class="nav-item"><a class="nav-link" href="#">elektronika</a>
 			</li>
 			<li class="nav-item"><a class="nav-link" href="/glider3/wykres">wykresy</a>
 			</li>
 			<li class="nav-item"><a class="nav-link"
-				href="/glider3/pictures">zdjęcia</a></li>
+				href="pictures">zdjęcia</a></li>
 
 			<!-- Dropdown meteo -->
 			<li class="nav-item dropdown"><a
@@ -62,7 +62,7 @@
 			
 			<!-- Dropdown login -->
 			<li class="nav-item dropdown"><a
-				class="nav-link dropdown-toggle" href="#" id="navbardrop"
+				class="nav-link dropdown-toggle" href="#" id="navbardrop2"
 				data-toggle="dropdown"> login </a>
 				<div class="dropdown-menu">
 					<a class="dropdown-item" href="admin">Administrator</a> 

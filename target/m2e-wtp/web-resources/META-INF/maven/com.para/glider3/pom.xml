@@ -17,6 +17,7 @@
 		<spring.secur.version>4.2.3.RELEASE</spring.secur.version>
 		<cglib.version>2.2.2</cglib.version>
 		<failOnMissingWebXml>false</failOnMissingWebXml>
+        <project.build.sourceEncoding>Cp1252</project.build.sourceEncoding>
 	</properties>
 
 	<dependencies>
@@ -118,7 +119,16 @@
 			<artifactId>postgresql</artifactId>
 			<version>9.1-901-1.jdbc4</version>
 		</dependency>
-
+          
+          <!-- https://mvnrepository.com/artifact/com.microsoft.sqlserver/mssql-jdbc -->
+<dependency>
+    <groupId>com.microsoft.sqlserver</groupId>
+    <artifactId>mssql-jdbc</artifactId>
+    <version>7.4.1.jre8</version>
+    <scope>test</scope>
+</dependency>
+          
+          
 
 	</dependencies>
 

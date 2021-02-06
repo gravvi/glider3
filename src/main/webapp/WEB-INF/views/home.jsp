@@ -18,7 +18,7 @@
 			<p>${opis}</p>
 			<img src="<c:url value="/resources/images2/kulka.jpg"></c:url>"
 				class="img-rounded" alt="kulka" width="1000" height="5" /> 
-				<img src="<c:url value="/resources/images2/sniezka-15.jpg"></c:url>"
+				<img src="<c:url value="/resources/images2/sniezka-14.jpg"></c:url>"
 				class="img-rounded" alt="mc" width="1000" height="250" /> 
 				<img src="<c:url value="/resources/images2/kulka.jpg"></c:url>"
 				class="img-rounded" alt="kulka" width="1000" height="8" />

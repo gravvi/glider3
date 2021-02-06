@@ -22,7 +22,7 @@ import com.para.glider3.dao.ParagliderDao;
 import com.para.glider3.dao.ParagliderDaoImp;
 
 @Configuration
-@ComponentScan(basePackages="com.para.glider3.* , add.files.*")
+@ComponentScan(basePackages="com.para.glider3")
 @EnableWebMvc
 public class MvcConfiguration extends WebMvcConfigurerAdapter{
 
@@ -33,29 +33,20 @@ public class MvcConfiguration extends WebMvcConfigurerAdapter{
 
 	@Bean
 	public DataSource getDataSource() {
-		String host = "ec2-54-75-230-41.eu-west-1.compute.amazonaws.com";  
-		String username = "bsrxdkddxjsvpr";  
-		String password = "05ba890afafb66d0969618049380b96fda300582f858f4cb0f1fb84a9bfba7b2";  
-		String dbName = "devcrpog06nafj";  
-		int port = 5432;
-		DriverManagerDataSource dataSource = new DriverManagerDataSource();
-		/*dataSource.setDriverClassName("org.postgresql.Driver");
-		dataSource.setUrl("jdbc:postgresql://localhost:5432/paragliders" + "?autoReconnect=true");
-		dataSource.setUsername("postgres");
-		dataSource.setPassword("15001900");*/
 		
-		/*dataSource.setDriverClassName("com.mysql.jdbc.Driver");
-		dataSource.setUrl("jdbc:mysql://localhost:3306/paragliders");
-		dataSource.setUsername("root");
-		dataSource.setPassword("15001900mcCM");*/
-
-		/*dataSource.setUrl("jdbc:mysql://172.30.98.145:3306/paragliders");
-		dataSource.setUsername("admin");
-		dataSource.setPassword("admin");
+		
+		DriverManagerDataSource dataSource = new DriverManagerDataSource(); 
+		/*
+		 * dataSource.setDriverClassName("com.mysql.jdbc.Driver");   //aktualna na localhoscie
+		 * dataSource.setUrl("jdbc:mysql://localhost:3306/paragliders");
+		 * dataSource.setUsername("root"); dataSource.setPassword("15001900mcCM");
 		 */
-		dataSource.setUrl("jdbc:postgresql://ec2-54-75-230-41.eu-west-1.compute.amazonaws.com:5432/devcrpog06nafj");
-		dataSource.setUsername("bsrxdkddxjsvpr");
-		dataSource.setPassword("05ba890afafb66d0969618049380b96fda300582f858f4cb0f1fb84a9bfba7b2");
+	
+		
+		dataSource.setDriverClassName("org.postgresql.Driver"); // herokuapp glider3 stara nazwa bazy d5d9k2gqr8hq5k
+		dataSource.setUrl("jdbc:postgresql://ec2-79-125-4-96.eu-west-1.compute.amazonaws.com:5432/d5d9k2gqr8hq5k");
+		dataSource.setUsername("mlpunsmczupasn");
+		dataSource.setPassword("c2763f69f8d340eb9b2a39c2389ac882c1f3829601fecc997832c5503b935b62");
 		 
 		return dataSource;
 	}
